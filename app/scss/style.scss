@@ -1,11 +1,50 @@
 @import "vars";
 @import "libs";
 @import "fonts";
+@import "global";
 
 
 .header{
 
 }
+.header__slider{
+  &-item{
+    height: 100vh;
+    background-image: url("../img/header-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+}
+.slider-item__info{
+  position: absolute;
+  right: 80px;
+  bottom: 116px;
+  text-align: right;
+  color: #FFFFFF;
+}
+.slider-item__info-title{
+  /* West Shore */
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 86px;
+  /* identical to box height, or 108% */
+  text-align: right;
+  text-transform: uppercase;
 
+}
+.slider-item__info-text{
+  /* Radical */
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 86px;
+  /* identical to box height, or 215% */
+  text-align: right;
+  text-transform: uppercase;
+
+}
 
 @import "media";
