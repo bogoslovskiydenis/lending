@@ -30,8 +30,7 @@
 }
 
 .slider-item__info-title {
-  /* West Shore */
-  font-style: normal;
+
   font-weight: 800;
   font-size: 80px;
   line-height: 86px;
@@ -93,11 +92,74 @@
   bottom: 40px;
   width: 100%;
   color: #FFFFFF;
-  .slick-current{
-    .dots-box{
+
+  .slick-current {
+    .dots-box {
       border-top: 4px solid $green;
     }
   }
+}
+
+.header__aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  border-right: 1px solid rgba(#ffff, .25);
+  height: 100vh;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.header__title {
+  font-size: 200px;
+  line-height: 156px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.07;
+  max-width: 467px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+.menu {
+  padding-top: 40px;
+  a {
+    color: #FFFFFF;
+
+    span {
+      display: block;
+      text-align: center;
+      line-height: 14px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.header__date {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 64px;
+  text-transform: uppercase;
+
+  span {
+    padding-top: 15px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    margin-bottom: 30px;
+    display: block;
+  }
+}
+.header__search{
+  padding-top: 15px;
+  padding-bottom: 35px;
 }
 
 @import "media";
