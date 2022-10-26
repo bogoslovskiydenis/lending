@@ -4,11 +4,13 @@
 @import "global";
 
 
-.header{
-
+.header {
+position: relative;
+  height: 100vh;
 }
-.header__slider{
-  &-item{
+
+.header__slider {
+  &-item {
     height: 100vh;
     background-image: url("../img/header-bg.jpeg");
     background-repeat: no-repeat;
@@ -17,34 +19,50 @@
     position: relative;
   }
 }
-.slider-item__info{
+
+.slider-item__info {
   position: absolute;
   right: 80px;
   bottom: 116px;
   text-align: right;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
-.slider-item__info-title{
+
+.slider-item__info-title {
   /* West Shore */
   font-style: normal;
   font-weight: 800;
   font-size: 80px;
   line-height: 86px;
-  /* identical to box height, or 108% */
-  text-align: right;
-  text-transform: uppercase;
-
+  margin-bottom: 48px;
 }
-.slider-item__info-text{
+
+.slider-item__info-subtitle {
+  margin-bottom: 5px;
+}
+
+.slider-item__info-subtext {
+  margin-bottom: 8px
+}
+
+.slider-item__info-text {
   /* Radical */
-  font-style: normal;
   font-weight: 800;
   font-size: 40px;
   line-height: 86px;
-  /* identical to box height, or 215% */
-  text-align: right;
-  text-transform: uppercase;
+}
 
+.slider-arrows {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.slider-arrows__left {
+  right: 125px;
 }
 
 @import "media";
