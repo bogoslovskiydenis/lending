@@ -5,7 +5,7 @@
 
 
 .header {
-position: relative;
+  position: relative;
   height: 100vh;
 }
 
@@ -63,6 +63,41 @@ position: relative;
 
 .slider-arrows__left {
   right: 125px;
+}
+
+.dots-box {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  height: 28px;
+  align-items: center;
+  border-top: 4px solid #FFFFFF;
+  padding-top: 6px;
+
+  &__number {
+    font-weight: 800;
+    line-height: 16px;
+    font-size: 19px;
+  }
+
+  &__name {
+    font-weight: 300;
+    line-height: 19px;
+  }
+}
+
+.slider-dots {
+  position: absolute;
+  right: 80px;
+  max-width: 920px;
+  bottom: 40px;
+  width: 100%;
+  color: #FFFFFF;
+  .slick-current{
+    .dots-box{
+      border-top: 4px solid $green;
+    }
+  }
 }
 
 @import "media";
