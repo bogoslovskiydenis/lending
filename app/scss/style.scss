@@ -162,4 +162,17 @@
   padding-bottom: 35px;
 }
 
+.header__map{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+.header__arrows{
+  position: absolute;
+ bottom: 40px;
+  left: 209px;
+  z-index: 3;
+}
+
 @import "media";
